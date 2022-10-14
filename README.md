@@ -68,8 +68,9 @@ First, I will define the Kafka Dependencies by creating a <dependencies>...</dep
 
 There are four steps to create a Java producer:
 
-  - Create a Java Class ProducerDemo.java
-  - Create producer properties
+ ### 1 - Create a Java Class ProducerDemo.java
+ 
+ ### 2 - Create producer properties
 
 Apache Kafka offers various Kafka Properties which are used for creating a producer. To know about each property, visit the official site of Kafka - https://kafka.apache.org/documentation. Navigate to Kafka > Documentation > Configurations > Producer Configs.
 
@@ -81,21 +82,29 @@ he required properties that we must specify are shown below:
 
 - **value.serializer**: It is a type of Serializer class which implements the org.apache.kafka.common.serialization.Serializer interface.
 
-  - Create the producer
+
+
+
+  ### 3 - Create the producer
  
 To create a Kafka producer, we just need to create an object of KafkaProducer
         KafkaProducer<String, String> producer = new KafkaProducer<>(properties);
-       
-  - Create a producer record
+  
+  
+  
+  ### 4 - Create a producer record
  
  In order to send the data to Kafka, we need to create a ProducerRecord. Here, the producer specifies the topic name as well as the message value which is to be delivered to Kafka. The key is assumed to be null in this instance.
 
 A ProducerRecord can be created as:
         ProducerRecord<String, String> producerRecord =
                 new ProducerRecord<>("topic_name", "hello world");
+          
+          
+          
+          
                 
-                
-  - Send the data
+  ### 5 - Send the data
 
 Now, we are ready to send the data to Kafka. The producer just needs to invoke the object of the ProducerRecord as:
 
