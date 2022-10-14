@@ -28,7 +28,7 @@ public class ProducerDemo {
         // create a producer record
 
         String topic = "topic_name";
-        String value = "hello world " + Integer.toString(i);
+        String value = "This is Data N°" + Integer.toString(i);
         String key = "id_" + Integer.toString(i);
         ProducerRecord<String, String> producerRecord =
                 new ProducerRecord<>(topic,key,value);
