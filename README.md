@@ -66,9 +66,9 @@ First, I will define the Kafka Dependencies by creating a <dependencies>...</dep
 
 ### How to Create a Kafka Producer in Java?
 
-Tutorial available at : docs/Kafka_Producer.md
+Tutorial available at : https://github.com/AnasRGD/Kafka_Demo/blob/master/docs/Kafka_Producer.md
 
 
 ### How to Create a Kafka Consumer in Java?
 
-Kindly check documentation : docs/Kafka_Consumer.md
+Kindly check documentation : https://github.com/AnasRGD/Kafka_Demo/blob/master/docs/Kafka_Consumer.md
